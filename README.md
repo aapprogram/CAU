@@ -1,15 +1,6 @@
 SpringBlog
 =====
 
-中文开发和部署文档请查看：http://raysmond.com/posts/springblog-guide
-
-SpringBlog is a very simple and clean-design blog system implemented with Spring Boot.
-It's one of my learning projects to explore awesome features in Spring Boot web programming. You can check my blog 
-site for demo [https://raysmond.com](http://raysmond.com).
-
-There's no demo online. Here's the screenshot of my previous blog homepage.
-![](http://7b1fa0.com1.z0.glb.clouddn.com/screencapture-blog-raysmond-8080-1480663084590.png)
-
 SpringBlog is powered by many powerful frameworks and third-party projects:
 
 - Spring Boot and many of Spring familiy (e.g. Spring MVC, Spring JPA, Spring Secruity and etc)
@@ -24,24 +15,6 @@ SpringBlog is powered by many powerful frameworks and third-party projects:
 
 ## Development
 
-Before development, please install the following service software:
-
-- [MySQL](https://www.mysql.com)
-
-Edit the spring config profile `src/main/resources/application.yml` according to your settings.
-
-And start MySQL and Redis first before running the application.
-
-```
-# If you're using Ubuntu server
-
-# Install MySQL
-apt-get install mysql-server
-service mysql start
-mysql -u root -p
->> create database spring_blog;
-```
-
 This is a Gradle project. Make sure Gradle is installed in your machine.
 Try `gradle -v` command. Otherwise install in from [http://www.gradle.org/](http://www.gradle.org/).
 I recommend you import the source code into Intellij IDE to edit the code.
@@ -53,10 +26,12 @@ I recommend you import the source code into Intellij IDE to edit the code.
 
 ## Development
 
+需要本机安装mysql、redis、bower（前端包管理）、jdk
+
 **How to import the project into Intellij IDEA and run from the IDE?**
 
 ```
-git clone https://github.com/Raysmond/SpringBlog.git 
+git clone https://github.com/tian-xian-xian/springBlog.git
 cd SpringBlog
 
 bower install 
